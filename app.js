@@ -1,4 +1,4 @@
-let availableKeywords = [
+let fruit = [
   "Apple",
   "Apricot",
   "Avocado 🥑",
@@ -86,7 +86,7 @@ inputBox.onkeyup = function () {
   let result = [];
   let input = inputBox.value;
   if (input.length) {
-    result = availableKeywords.filter((keyword) => {
+    result = fruit.filter((keyword) => {
       return keyword.toLowerCase().includes(input.toLowerCase());
     });
   }
